@@ -9,9 +9,9 @@ Future<File> getImage() async {
 Future<String> uploadImage(File image) async {
   String nameFile = basename(image.path);
 
-  StorageReference ref = FirebaseStorage.instance.ref().child(nameFile);
-  StorageUploadTask task = ref.putFile(image);
-  StorageTaskSnapshot snapshot = await task.onComplete;
+  Reference ref = FirebaseStorage.instance.ref().child(nameFile);
+  UploadTask task = ref.putFile(image);
+  TaskSnapshot snapshot = await task;
   
   return await snapshot.ref.getDownloadURL();
 }

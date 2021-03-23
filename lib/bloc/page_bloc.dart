@@ -8,8 +8,7 @@ part 'page_event.dart';
 part 'page_state.dart';
 
 class PageBloc extends Bloc<PageEvent, PageState> {
-  @override
-  PageState get initialState => OnInitialPage();
+  PageBloc() : super(OnSplashPage());
 
   @override
   Stream<PageState> mapEventToState(
@@ -20,7 +19,9 @@ class PageBloc extends Bloc<PageEvent, PageState> {
     } else if (event is GoToLoginPage) {
       yield OnLoginPage();
     } else if (event is GoToMainPage) {
-      yield OnMainPage(bottomNavbarIndex: event.bottomNavbarIndex, isExpired: event.isExpired);
+      yield OnMainPage(
+          bottomNavbarIndex: event.bottomNavbarIndex,
+          isExpired: event.isExpired);
     } else if (event is GoToRegistrationPage) {
       yield OnRegistrationPage(event.registrationData);
     } else if (event is GoToPreferencePage) {

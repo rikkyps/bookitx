@@ -50,6 +50,7 @@ class MovieDetailPage extends StatelessWidget {
                                 height: 275,
                                 decoration: BoxDecoration(
                                     gradient: LinearGradient(
+
                                         colors: [
                                       Colors.white,
                                       Colors.transparent

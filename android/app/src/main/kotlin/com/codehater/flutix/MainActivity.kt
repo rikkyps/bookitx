@@ -1,4 +1,4 @@
-package com.example.flutix
+package com.codehater.flutix
 
 import io.flutter.embedding.android.FlutterActivity
 

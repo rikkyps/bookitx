@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:flutix/bloc/page_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

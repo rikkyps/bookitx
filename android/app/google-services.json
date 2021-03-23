@@ -8,6 +8,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:558591927099:android:2ae4a22c322bf713414d1e",
+        "android_client_info": {
+          "package_name": "com.codehater.flutix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558591927099-plj2uq6petv876dtnh3ii4komu3jds8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxdr6PrjkYnD4ByZvUNakX-yeD-h_Rdik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558591927099-plj2uq6petv876dtnh3ii4komu3jds8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:558591927099:android:19f3b25f2120834b414d1e",
         "android_client_info": {
           "package_name": "com.example.flutix"
